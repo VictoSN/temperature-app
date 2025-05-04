@@ -3,4 +3,104 @@ body{
     text-align: center;
     margin: 50px;
     padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+#outsideProgram{
+    width: 400px;
+    padding: 30px;
+    background-color: hsla(0, 0%, 50%, 0.116);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#convertProgram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+#pageHeader{
+    padding: 25px;
+    background-color: hsl(209, 100%, 50%);
+    border-radius: 20px;
+    color: white;
+}
+#topHalf{
+    background-color: hsla(209, 100%, 64%, 0.356);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0 30px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#topTextField{
+    font-size: 1.5em;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px;
+    margin: 10px 0;
+    display: flex;
+    text-align: center;
+}
+#tempUnitOrigin, #tempUnitDestination{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+#convertButton{
+    padding: 10px;
+    font-size: 1.5em;
+    background: hsl(209, 100%, 64%);
+    border-radius: 15px;
+    color: white;
+    border: none;
+    transition: background-color 0.25s;
+}
+#convertButton:hover{
+    background: hsl(209, 100%, 50%);
+}
+#convertButton:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#bottomHalf{
+    background-color: hsla(209, 100%, 64%, 0.356);
+    border-radius: 10px;
+    margin: 20px 0 30px;
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#bottomLabel{
+    font-size: 1.5em;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 30px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

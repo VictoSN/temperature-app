@@ -33,7 +33,7 @@ function tryConvert(elseStatement) {
 
     if (!isNaN(inputValue)) {
         const result = convertTemp(inputValue, fromUnit, toUnit);
-        bottomLabel.textContent = `${result.toFixed(2)} °${toUnit.charAt(0).toUpperCase()}`;
+        bottomLabel.textContent = `${result.toFixed(2)}`;
     } else {
         if(elseStatement) bottomLabel.textContent = "Please enter a valid number.";
     }

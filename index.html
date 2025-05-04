@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1 id="pageHeader">Temperature Converter</h1>
-
-        <input id="topTextField" type="number" title="Top Text Box" autocomplete="off"><br>
-        <select id="tempUnitOrigin">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-        </select>
-
-        <button id="convertButton">Convert</button><br>
-        <p id="bottomLabel" title="Bottom Label"></p>
-        <select id="tempUnitDestination">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-        </select>
+    <div id="outsideProgram">
+        <div id="convertProgram">
+            <h1 id="pageHeader">Temperature Converter</h1>
+        
+            <div id="topHalf">
+                <input id="topTextField" type="number" title="Top Text Box" autocomplete="off"><br>
+                <select id="tempUnitOrigin">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                    <option value="kelvin">°K</option>
+                </select>
+            </div>
+        
+            <button id="convertButton">Convert</button><br>
+        
+            <div id="bottomHalf">
+                <p id="bottomLabel" title="Bottom Label">0</p>
+                <select id="tempUnitDestination">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                    <option value="kelvin">°K</option>
+                </select>
+            </div>
+        
+        </div>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>
