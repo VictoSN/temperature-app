@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" href="images/Logo Circle.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="pageHeader">Temperature Converter</h1>
+
+        <input id="topTextField" type="number" title="Top Text Box" autocomplete="off"><br>
+        <select id="tempUnitOrigin">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+
+        <button id="convertButton">Convert</button><br>
+        <p id="bottomLabel" title="Bottom Label"></p>
+        <select id="tempUnitDestination">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
