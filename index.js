@@ -26,7 +26,7 @@ function convertTemp(value, fromUnit, toUnit) {
     }
 }
 
-function tryConvert(elseStatement) {
+function tryConvert(warningStatement) {
     const inputValue = parseFloat(topText.value);
     const fromUnit = dropOrigin.value;
     const toUnit = dropDestination.value;
@@ -35,7 +35,7 @@ function tryConvert(elseStatement) {
         const result = convertTemp(inputValue, fromUnit, toUnit);
         bottomLabel.textContent = `${result.toFixed(2)}`;
     } else {
-        if(elseStatement) bottomLabel.textContent = "Please enter a valid number.";
+        if(warningStatement) bottomLabel.textContent = "Please enter a valid number.";
     }
 }
 
