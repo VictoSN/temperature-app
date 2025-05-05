@@ -92,7 +92,7 @@ body {
     text-align: center;
     transition: all 0.3s ease;
     appearance: none;
-    background-image: url("/images/chevron_down.png");
+    background-image: url("images/chevron_down.png");
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 16px;
@@ -146,7 +146,7 @@ body {
         padding: 10px;
     }
     #outsideProgram {
-        padding: 0px;
+        padding: 10px;
     }
     #topHalf, #bottomHalf {
         flex-direction: column;
