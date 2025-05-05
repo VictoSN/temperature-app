@@ -71,6 +71,7 @@ body {
     text-align: center;
     color: #FFF;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 #topTextField:focus {
@@ -136,14 +137,17 @@ body {
     align-items: center;
     justify-content: center;
     color: #FFF;
+    box-sizing: border-box;
 }
 
 @media (max-width: 400px) {
     body {
-        margin: 20px;
+        margin: 0px;
         padding: 10px;
     }
-    
+    #outsideProgram {
+        padding: 0px;
+    }
     #topHalf, #bottomHalf {
         flex-direction: column;
         width: 100%;
