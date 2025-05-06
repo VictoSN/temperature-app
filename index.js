@@ -33,9 +33,21 @@ function tryConvert(warningStatement) {
 
     if (!isNaN(inputValue)) {
         const result = convertTemp(inputValue, fromUnit, toUnit);
-        bottomLabel.textContent = `${result.toFixed(2)}`;
+        let resultString = String(result.toFixed(2))
+
+        if (resultString.includes('.')) {
+            // replace .0 with empty string
+            resultString = resultString.replace(/\.?0+$/, '');
+            
+            // if last '.', then remove it. ex = 123. -> 123
+            if (resultString.slice(-1) === '.') {
+                resultString = resultString.slice(0, -1);
+            }
+        }
+
+        bottomLabel.value = resultString;
     } else {
-        if(warningStatement) bottomLabel.textContent = "Please enter a valid number.";
+        if(warningStatement) bottomLabel.value = "Please enter a valid number.";
     }
 }
 

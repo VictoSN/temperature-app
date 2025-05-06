@@ -102,7 +102,7 @@ body {
 #convertButton {
     padding: 15px 30px;
     font-size: 1.3em;
-    background: linear-gradient(135deg, rgb(36, 36, 36), #000000);
+    background-color: hsla(216, 100%, 50%, 0.5);
     border-radius: 12px;
     color: white;
     border: none;
@@ -133,9 +133,7 @@ body {
     max-width: 250px;
     min-height: 30px;
     margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: #FFF;
     box-sizing: border-box;
 }
@@ -148,13 +146,16 @@ body {
     #outsideProgram {
         padding: 10px;
     }
+    #pageHeader{
+        font-size: 1.5em;
+    }
     #topHalf, #bottomHalf {
         flex-direction: column;
-        width: 100%;
+        width: 85%;
     }
 
     #topTextField, #bottomLabel, #tempUnitOrigin, #tempUnitDestination {
-        width: 100%;
+        width: 90%;
         max-width: none;
     }
     
