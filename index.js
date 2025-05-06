@@ -54,3 +54,12 @@ function tryConvert(warningStatement) {
 dropOrigin.addEventListener("change", () => tryConvert(false));
 dropDestination.addEventListener("change", () => tryConvert(false));
 convertButton.addEventListener("click", () => tryConvert(true));
+
+document.addEventListener("keydown", (event) => {
+    const key = event.key;
+
+    if(key === "Enter" || key === "=") {
+        event.preventDefault();
+        tryConvert(true);
+    }
+});
